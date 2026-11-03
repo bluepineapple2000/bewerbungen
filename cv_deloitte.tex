@@ -25,22 +25,23 @@
 }
 
 % ------------------------------------------------------------
-% Siemens-inspirierte Farbpalette: Petrol, dunkles Blau und helle Petroltöne.
-% Zielstelle: Siemens Graduate Program, Tech Unit Motion, Job-ID 524054.
-% https://jobs.siemens.com/de_DE/externaljobs/JobDetail/524054
-% Zum Anpassen des CV nur diese Werte ändern.
+% Deloitte-inspirierte Farbpalette
+% Deep Green, Deloitte Green, Charcoal und helle Grüntöne.
+% Zielstelle: Consultant Data Science & ML Engineering
 % ------------------------------------------------------------
-\definecolor{CVPrimary}{HTML}{007A7A}
-\definecolor{CVAccent}{HTML}{009999}
-\definecolor{CVText}{HTML}{000028}
-\definecolor{CVMuted}{HTML}{4B5B65}
-\definecolor{CVSoft}{HTML}{EFF7F7}
-\definecolor{CVRule}{HTML}{B8DCDC}
+
+\definecolor{CVPrimary}{HTML}{344B24}
+\definecolor{CVAccent}{HTML}{86BC25}
+\definecolor{CVText}{HTML}{252525}
+\definecolor{CVMuted}{HTML}{666B62}
+\definecolor{CVSoft}{HTML}{F2F5ED}
+\definecolor{CVRule}{HTML}{DCE5D2}
+
 
 \hypersetup{
-  pdftitle={Natalie Böhm -- Siemens Graduate Program -- Tech Unit Motion},
+  pdftitle={Natalie Böhm -- Consultant Data Science & ML Engineering -- Deloitte},
   pdfauthor={Natalie Böhm},
-  pdfsubject={Bewerbung auf Job-ID 524054},
+  pdfsubject={Consultant Data Science & ML Engineering},
   colorlinks=true,
   urlcolor=CVPrimary,
   linkcolor=CVPrimary
@@ -100,17 +101,11 @@
 \begin{document}
 \color{CVText}
 
-\begin{minipage}[t]{0.285\textwidth}
+\begin{minipage}[t]{0.26\textwidth}
   \vspace{0pt}
   \setlength{\fboxsep}{3mm}%
   \colorbox{CVSoft}{%
     \begin{minipage}[t][\dimexpr\textheight-2\fboxsep-5mm\relax]{\dimexpr\linewidth-2\fboxsep\relax}
-      \vspace{1mm}
-      \centering
-      \fcolorbox{CVRule}{white}{\includegraphics[width=3.55cm,height=4.35cm,keepaspectratio]{Bewerbungsbild.png}}\par
-      \vspace{3mm}
-
-      \raggedright
       \sidebarsection{Kontakt}
       \contactitem{\IconMail}{{\footnotesize\href{mailto:kontakt@natalieboehm.de}{kontakt@natalieboehm.de}}}
       \contactitem{\IconPhone}{+49 1522 1746238}
@@ -120,15 +115,15 @@
       \sidebarsection{Kompetenzen}
       \small
       \textbf{KI \& Datenanalyse}\par
-      PyTorch, Reinforcement Learning, NLP, Computer Vision\par\vspace{1.1mm}
+      PyTorch, scikit-learn, Reinforcement Learning, NLP, Computer Vision, Predictive Analytics, Power BI\par\vspace{1.1mm}
       \textbf{Software}\par
       Python, Java, C\#, SQL, Webentwicklung, Testing\par\vspace{1.1mm}
       \textbf{Automatisierung \& IT}\par
-      Ansible, Docker, CI/CD, Linux\par\vspace{1.1mm}
-      \textbf{Persönliche Stärken}\par
-      Einarbeitung in komplexe Themen\par
-      Team- und Zielorientierung\par
-      (Technische) Präsentationen
+      Microsoft Azure, Docker, CI/CD, Linux, Ansible, Kubernetes-Grundkenntnisse\par\vspace{1.1mm}
+      \textbf{Methoden \& Zusammenarbeit}\par
+      Datenanalyse, Prozessoptimierung,
+      technische Präsentationen,
+      Team- und Zielorientierung
 
       \sidebarsection{Sprachen}
       Deutsch: Muttersprache\par
@@ -153,11 +148,11 @@
   }
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.68\textwidth}
+\begin{minipage}[t]{0.705\textwidth}
   \vspace{0pt}
   {\fontsize{25}{28}\selectfont\bfseries Natalie Böhm}\par
   \vspace{1mm}
-  {\Large\textcolor{CVPrimary}{Industrial AI \& Softwareentwicklung}}\par
+  {\Large\textcolor{CVPrimary}{Consultant Data Science \& ML Engineering}}\par
   \vspace{2.5mm}
   {\small
     An der Schnittstelle von Fachbereich und IT entwickle ich
@@ -178,7 +173,7 @@ mich auch privat engagiere und eigene Ideen umsetze.
 
   \entry{10/2021--09/2024}{B.Sc. Wirtschaftsinformatik}{DHBW / Bosch Stuttgart}{
     Dualer Studiengang mit Fokus auf Application Management\par
-    Bachelorarbeit: Anwendung und Evaluation von Domain Adversarial Training in der Ultraschall-Höhenklassifikation
+    Bachelorarbeit: Anwendung und Evaluation von Domain Adversarial Training für Parkassistenten
   }
 
   \entry{09/2012--06/2021}{Abitur}{Nellenburg-Gymnasium Stockach}{}
@@ -190,13 +185,15 @@ mich auch privat engagiere und eigene Ideen umsetze.
     \tag{Python}\tag{Condition Monitoring}\tag{Sensortechnik}
   }
   \entry{04/2025--08/2026}{Werkstudentin}{ZEISS SMT GmbH, Oberkochen}{
-    Entwicklung eines Reinforcement-Learning-Agenten für industrielles Scheduling,
-    Monitoring und Analyse der Maschinenauslastung\par
+    Entwicklung eines Reinforcement-Learning-Agenten
+      zur Lösung industrieller Scheduling-Probleme, sowie
+      Monitoring und Analyse der Maschinenauslastung
+      zur Unterstützung datenbasierter Entscheidungen\par
     \tag{Python}\tag{Reinforcement Learning}\tag{Scheduling}\tag{Elastic}
   }
 
   \entry{10/2024--03/2025}{Werkstudentin}{Robert Bosch GmbH, Stuttgart-Feuerbach}{
-    Verbesserung des Asset-Managements mit RFID-Technologien, Evaluation eines
+    Verbesserung des Asset-Managements mit RFID-Technologien\par Evaluation eines
     KI-Chatbots mit internen Tools für das Knowledge-Management, Einblicke in
     industrielle Digitalisierung und datenbasierte Prozessverbesserung\par
     \tag{GenAI-Bots}\tag{Knowledge Management}\tag{Prozessanalyse}\tag{Scrum}
@@ -205,16 +202,15 @@ mich auch privat engagiere und eigene Ideen umsetze.
   \entry{10/2021--09/2024}{Duale Studentin}{Robert Bosch GmbH, Stuttgart-Feuerbach}{
     Rotation durch die Abteilungen SIEM, Hadoop, Infrastruktur und Driving Experience mit Fokus auf
     Parkassistenten\par
-    \tag{Hadoop}\tag{Infrastruktur}\tag{Splunk}\tag{Python}\tag{Linux}
+    \tag{Hadoop}\tag{Infrastruktur}\tag{Splunk}\tag{Python}\tag{Linux}\tag{Azure}
   }
 
   \mainsection{Engagement \& Projekte}
 
   \compactentry{Selfnet e.\,V. -- Infrastruktur und Entwicklung}{seit Bachelorstudium}{
     2. Beisitzerin, Entwicklung des Verwaltungssystems, Hardwarewartung,
-    DNS-Administration, Mitgliedersupport bei Netzwerkproblemen,
-    Kubernetes-Grundkenntnisse\par
-    \tag{Django}\tag{Python}\tag{Podman}\tag{DNS}
+    DNS-Administration, Mitgliedersupport bei Netzwerkproblemen\par
+    \tag{Django}\tag{Python}\tag{Podman}\tag{DNS}\tag{Kubernetes-Grundkenntnisse}
   }
 
   \compactentry{Private Infrastruktur}{privat}{
@@ -224,7 +220,7 @@ mich auch privat engagiere und eigene Ideen umsetze.
     \tag{Ansible}
   }
 
-  \compactentry{InnoConsult e.\,V.}{während des Masters}{
+  \compactentry{InnoConsult e.\,V. -- Consulting und Projektarbeit}{während des Masters}{
     Eventmanagement, Design-Thinking-Workshops, Entwicklung von Marketingstrategien für Startups.
   }
 \end{minipage}

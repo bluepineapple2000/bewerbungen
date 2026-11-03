@@ -25,24 +25,23 @@
 }
 
 % ------------------------------------------------------------
-% Trumpf-inspirierte Farbpalette: Trumpf-Blau (#0033BA) und helle Blautöne.
-% Zielstelle: Trumpf Trainee Technology & Innovation, Referenznr. R00042851.
-% Zum Anpassen des CV nur diese Werte ändern.
+% Cigus
 % ------------------------------------------------------------
-\definecolor{CVPrimary}{HTML}{0033BA}
-\definecolor{CVAccent}{HTML}{4D7CE6}
-\definecolor{CVText}{HTML}{0A1428}
-\definecolor{CVMuted}{HTML}{4B5B65}
-\definecolor{CVSoft}{HTML}{EEF2FC}
-\definecolor{CVRule}{HTML}{B3C6F0}
+
+\definecolor{CVPrimary}{HTML}{b19068} % Tag text + H2 überschriften + icons + Unterüberschrift
+\definecolor{CVAccent}{HTML}{f89a28} % Striche + Mein Name
+\definecolor{CVText}{HTML}{000000} % Ganzer Text
+\definecolor{CVMuted}{HTML}{5e5449} % Daten + Angaben
+\definecolor{CVSoft}{HTML}{fcf6ef} % Hintergrund Seite + Tags
+
 
 \hypersetup{
-  pdftitle={Natalie Böhm -- Trumpf Trainee Technology \& Innovation},
+  pdftitle={Natalie Böhm -- Wissenschaftlicher Mitarbeiter Entwicklung Digitalprozesse -- Cigus},
   pdfauthor={Natalie Böhm},
-  pdfsubject={Bewerbung auf Referenznummer R00042851},
+  pdfsubject={Wissenschaftlicher Mitarbeiter Entwicklung Digitalprozesse},
   colorlinks=true,
-  urlcolor=CVPrimary,
-  linkcolor=CVPrimary
+  urlcolor=CVText,
+  linkcolor=CVText
 }
 
 \renewcommand{\familydefault}{\sfdefault}
@@ -60,7 +59,7 @@
 \newcommand{\mainsection}[1]{%
   \vspace{2mm}%
   {\large\bfseries\textcolor{CVPrimary}{\MakeUppercase{#1}}}\par
-  \vspace{0.8mm}{\color{CVRule}\rule{\linewidth}{0.6pt}}\vspace{1.2mm}
+  \vspace{0.8mm}{\color{CVAccent}\rule{\linewidth}{0.6pt}}\vspace{1.2mm}
 }
 
 \newcommand{\sideitem}[2]{%
@@ -99,35 +98,34 @@
 \begin{document}
 \color{CVText}
 
-\begin{minipage}[t]{0.285\textwidth}
+\begin{minipage}[t]{0.26\textwidth}
   \vspace{0pt}
   \setlength{\fboxsep}{3mm}%
   \colorbox{CVSoft}{%
     \begin{minipage}[t][\dimexpr\textheight-2\fboxsep-5mm\relax]{\dimexpr\linewidth-2\fboxsep\relax}
       \vspace{1mm}
       \centering
-      \fcolorbox{white}{white}{\includegraphics[width=3.55cm,height=4.35cm,keepaspectratio]{Bewerbungsbild.jpg}}\par
+      \includegraphics[width=3.55cm,height=4.35cm,keepaspectratio]{Bewerbungsbild.png}
       \vspace{3mm}
 
-      \raggedright
       \sidebarsection{Kontakt}
       \contactitem{\IconMail}{{\footnotesize\href{mailto:kontakt@natalieboehm.de}{kontakt@natalieboehm.de}}}
       \contactitem{\IconPhone}{+49 1522 1746238}
       \contactitem{\IconLocation}{Aalen}
-      \contactitem{\IconProfile}{@natalieboehm2001}
+      \contactitem{\IconProfile}{{\footnotesize\href{https://www.linkedin.com/in/natalieboehm2}{@natalieboehm2}}}
 
       \sidebarsection{Kompetenzen}
       \small
       \textbf{KI \& Datenanalyse}\par
-      PyTorch, Reinforcement Learning, NLP, Computer Vision\par\vspace{1.1mm}
+      PyTorch, scikit-learn, Reinforcement Learning, NLP, Computer Vision, Predictive Analytics, Power BI\par\vspace{1.1mm}
       \textbf{Software}\par
       Python, Java, C\#, SQL, Webentwicklung, Testing\par\vspace{1.1mm}
       \textbf{Automatisierung \& IT}\par
-      Ansible, Docker, CI/CD, Linux\par\vspace{1.1mm}
-      \textbf{Persönliche Stärken}\par
-      Einarbeitung in komplexe Themen\par
-      Team- und Zielorientierung\par
-      (Technische) Präsentationen
+      Microsoft Azure, Docker, CI/CD, Linux, Ansible, Kubernetes-Grundkenntnisse\par\vspace{1.1mm}
+      \textbf{Methoden \& Zusammenarbeit}\par
+      Datenanalyse, Prozessoptimierung,
+      technische Präsentationen,
+      Team- und Zielorientierung
 
       \sidebarsection{Sprachen}
       Deutsch: Muttersprache\par
@@ -152,11 +150,11 @@
   }
 \end{minipage}
 \hfill
-\begin{minipage}[t]{0.68\textwidth}
+\begin{minipage}[t]{0.705\textwidth}
   \vspace{0pt}
-  {\fontsize{25}{28}\selectfont\bfseries Natalie Böhm}\par
+  {\fontsize{25}{28}\selectfont\bfseries\color{CVAccent} Natalie Böhm}\par
   \vspace{1mm}
-  {\Large\textcolor{CVPrimary}{Trainee Technology \& Innovation}}\par
+  {\Large\textcolor{CVPrimary}{Wissenschaftlicher Mitarbeiter Entwicklung Digitalprozesse}}\par
   \vspace{2.5mm}
   {\small
     An der Schnittstelle von Fachbereich und IT entwickle ich
@@ -177,24 +175,27 @@ mich auch privat engagiere und eigene Ideen umsetze.
 
   \entry{10/2021--09/2024}{B.Sc. Wirtschaftsinformatik}{DHBW / Bosch Stuttgart}{
     Dualer Studiengang mit Fokus auf Application Management\par
-    Bachelorarbeit: Anwendung und Evaluation von Domain Adversarial Training in der Ultraschall-Höhenklassifikation
+    Bachelorarbeit: Anwendung und Evaluation von Domain Adversarial Training für Parkassistenten
   }
 
   \entry{09/2012--06/2021}{Abitur}{Nellenburg-Gymnasium Stockach}{}
 
 \mainsection{Berufserfahrung}
-  \entry{09/2026 -- 03/2027}{Akademische Mitarbeiterin}{HS Aalen, Institut für Antriebstechnik}{
+  \entry{09/2026 -- heute}{Akademische Mitarbeiterin}{HS Aalen, Institut für Antriebstechnik}{
     Entwicklung eines datengetriebenen Verfahrens zur Vorhersage der Restnutzungsdauer von Bandsägen\par
+    Aufbau der Messtechnik und Sensordatenerfassung\par
     \tag{Python}\tag{Condition Monitoring}\tag{Sensortechnik}
   }
   \entry{04/2025--08/2026}{Werkstudentin}{ZEISS SMT GmbH, Oberkochen}{
-    Entwicklung eines Reinforcement-Learning-Agenten für industrielles Scheduling,
-    Monitoring und Analyse der Maschinenauslastung\par
+    Entwicklung eines Reinforcement-Learning-Agenten
+      zur Lösung industrieller Scheduling-Probleme, sowie
+      Monitoring und Analyse der Maschinenauslastung
+      zur Unterstützung datenbasierter Entscheidungen\par
     \tag{Python}\tag{Reinforcement Learning}\tag{Scheduling}\tag{Elastic}
   }
 
   \entry{10/2024--03/2025}{Werkstudentin}{Robert Bosch GmbH, Stuttgart-Feuerbach}{
-    Verbesserung des Asset-Managements mit RFID-Technologien, Evaluation eines
+    Verbesserung des Asset-Managements mit RFID-Technologien\par Evaluation eines
     KI-Chatbots mit internen Tools für das Knowledge-Management, Einblicke in
     industrielle Digitalisierung und datenbasierte Prozessverbesserung\par
     \tag{GenAI-Bots}\tag{Knowledge Management}\tag{Prozessanalyse}\tag{Scrum}
@@ -203,26 +204,25 @@ mich auch privat engagiere und eigene Ideen umsetze.
   \entry{10/2021--09/2024}{Duale Studentin}{Robert Bosch GmbH, Stuttgart-Feuerbach}{
     Rotation durch die Abteilungen SIEM, Hadoop, Infrastruktur und Driving Experience mit Fokus auf
     Parkassistenten\par
-    \tag{Hadoop}\tag{Infrastruktur}\tag{Splunk}\tag{Python}\tag{Linux}
+    \tag{Hadoop}\tag{Infrastruktur}\tag{Splunk}\tag{Python}\tag{Linux}\tag{Azure}
   }
 
   \mainsection{Engagement \& Projekte}
 
   \compactentry{Selfnet e.\,V. -- Infrastruktur und Entwicklung}{seit Bachelorstudium}{
     2. Beisitzerin, Entwicklung des Verwaltungssystems, Hardwarewartung,
-    DNS-Administration, Mitgliedersupport bei Netzwerkproblemen,
-    Kubernetes-Grundkenntnisse\par
-    \tag{Django}\tag{Python}\tag{Podman}\tag{DNS}
+    DNS-Administration, Mitgliedersupport bei Netzwerkproblemen\par
+    \tag{Django}\tag{Python}\tag{Podman}\tag{DNS}\tag{Kubernetes-Grundkenntnisse}
   }
 
   \compactentry{Private Infrastruktur}{privat}{
     Automatisierte Konfiguration und Administration eigener Systeme mit Ansible
     (Nextcloud, Home Assistant), Einsatz von LLMs, Training eigener
     Modelle zur Wake-Word-Erkennung\par
-    \tag{Ansible}\tag{Machine Learning}
+    \tag{Ansible}
   }
 
-  \compactentry{InnoConsult e.\,V.}{während des Masters}{
+  \compactentry{InnoConsult e.\,V. -- Consulting und Projektarbeit}{während des Masters}{
     Eventmanagement, Design-Thinking-Workshops, Entwicklung von Marketingstrategien für Startups.
   }
 \end{minipage}
