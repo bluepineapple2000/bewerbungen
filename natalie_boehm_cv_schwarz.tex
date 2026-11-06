@@ -25,26 +25,23 @@
 }
 
 % ------------------------------------------------------------
-% Deloitte-inspirierte Farbpalette
-% Deep Green, Deloitte Green, Charcoal und helle Grüntöne.
-% Zielstelle: Consultant Data Science & ML Engineering
+% Schwarz Digit: https://schwarz-digits.de/jobsearch/hr/junior-it-consultant-digital-transformation-ai-strategy-m-w-d-GT3634
 % ------------------------------------------------------------
 
-\definecolor{CVPrimary}{HTML}{344B24}
-\definecolor{CVAccent}{HTML}{86BC25}
-\definecolor{CVText}{HTML}{252525}
-\definecolor{CVMuted}{HTML}{666B62}
-\definecolor{CVSoft}{HTML}{F2F5ED}
-\definecolor{CVRule}{HTML}{DCE5D2}
+\definecolor{CVPrimary}{HTML}{174A5B}
+\definecolor{CVAccent}{HTML}{2F9E8D}
+\definecolor{CVText}{HTML}{1F2933}
+\definecolor{CVMuted}{HTML}{667681}
+\definecolor{CVSoft}{HTML}{F2F6F7}
 
 
 \hypersetup{
-  pdftitle={Natalie Böhm -- Consultant Data Science & ML Engineering -- Deloitte},
+  pdftitle={Natalie Böhm -- Junior IT Consultant -- Schwarz Digits},
   pdfauthor={Natalie Böhm},
-  pdfsubject={Consultant Data Science & ML Engineering},
+  pdfsubject={Junior IT Consultant - Digital Transformation & AI Strategy},
   colorlinks=true,
-  urlcolor=CVPrimary,
-  linkcolor=CVPrimary
+  urlcolor=CVText,
+  linkcolor=CVText
 }
 
 \renewcommand{\familydefault}{\sfdefault}
@@ -62,7 +59,7 @@
 \newcommand{\mainsection}[1]{%
   \vspace{2mm}%
   {\large\bfseries\textcolor{CVPrimary}{\MakeUppercase{#1}}}\par
-  \vspace{0.8mm}{\color{CVRule}\rule{\linewidth}{0.6pt}}\vspace{1.2mm}
+  \vspace{0.8mm}{\color{CVAccent}\rule{\linewidth}{0.6pt}}\vspace{1.2mm}
 }
 
 \newcommand{\sideitem}[2]{%
@@ -79,7 +76,7 @@
 }
 
 \newcommand{\entry}[4]{%
-  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.18\linewidth}@{\hspace{2.5mm}}X@{}}
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{0.13\linewidth}@{\hspace{2.5mm}}X@{}}
     {\small\textcolor{CVMuted}{#1}} &
     {\bfseries #2}\hfill{\small\textcolor{CVMuted}{#3}}\par
     #4
@@ -106,18 +103,24 @@
   \setlength{\fboxsep}{3mm}%
   \colorbox{CVSoft}{%
     \begin{minipage}[t][\dimexpr\textheight-2\fboxsep-5mm\relax]{\dimexpr\linewidth-2\fboxsep\relax}
+      \vspace{1mm}
+      {\centering
+      \includegraphics[width=3.55cm,height=4.35cm,keepaspectratio]{Bewerbungsbild.jpg}\par}
+      \vspace{3mm}
+
+      
       \sidebarsection{Kontakt}
       \contactitem{\IconMail}{{\footnotesize\href{mailto:kontakt@natalieboehm.de}{kontakt@natalieboehm.de}}}
       \contactitem{\IconPhone}{+49 1522 1746238}
       \contactitem{\IconLocation}{Aalen}
-      \contactitem{\IconProfile}{@natalieboehm2001}
+      \contactitem{\IconProfile}{{\footnotesize\href{https://www.linkedin.com/in/natalieboehm2}{@natalieboehm2}}}
 
       \sidebarsection{Kompetenzen}
       \small
       \textbf{KI \& Datenanalyse}\par
-      PyTorch, scikit-learn, Reinforcement Learning, NLP, Computer Vision, Predictive Analytics, Power BI\par\vspace{1.1mm}
+      PyTorch, Reinforcement Learning, NLP, Computer Vision, Predictive Analytics, Power BI\par\vspace{1.1mm}
       \textbf{Software}\par
-      Python, Java, C\#, SQL, Webentwicklung, Testing\par\vspace{1.1mm}
+      Python, Java, C\#, SQL, Testing, Webentwicklung\par\vspace{1.1mm}
       \textbf{Automatisierung \& IT}\par
       Microsoft Azure, Docker, CI/CD, Linux, Ansible, Kubernetes-Grundkenntnisse\par\vspace{1.1mm}
       \textbf{Methoden \& Zusammenarbeit}\par
@@ -150,9 +153,9 @@
 \hfill
 \begin{minipage}[t]{0.705\textwidth}
   \vspace{0pt}
-  {\fontsize{25}{28}\selectfont\bfseries Natalie Böhm}\par
+  {\fontsize{25}{28}\selectfont\bfseries\color{CVAccent} Natalie Böhm}\par
   \vspace{1mm}
-  {\Large\textcolor{CVPrimary}{Consultant Data Science \& ML Engineering}}\par
+  {\Large\textcolor{CVPrimary}{Junior IT Consultant - Digital Transformation \& AI Strategy}}\par
   \vspace{2.5mm}
   {\small
     An der Schnittstelle von Fachbereich und IT entwickle ich
@@ -186,7 +189,7 @@ mich auch privat engagiere und eigene Ideen umsetze.
   }
   \entry{04/2025--08/2026}{Werkstudentin}{ZEISS SMT GmbH, Oberkochen}{
     Entwicklung eines Reinforcement-Learning-Agenten
-      zur Lösung industrieller Scheduling-Probleme, sowie
+      zur Lösung industrieller Scheduling-Probleme\par
       Monitoring und Analyse der Maschinenauslastung
       zur Unterstützung datenbasierter Entscheidungen\par
     \tag{Python}\tag{Reinforcement Learning}\tag{Scheduling}\tag{Elastic}
